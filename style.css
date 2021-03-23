@@ -41,3 +41,14 @@ input[type = button]{
     text-align: center;
     font-family: 'Montserrat', sans-serif;
 }
+.createdImages {
+    position: relative;
+}
+.topTextDiv {
+    position: absolute;
+    top: 1px
+}
+.bottomTextDiv {
+    position: absolute;
+    bottom: 1px
+}
