@@ -5,6 +5,8 @@ const button = document.getElementById("but1")
             //give new div class attributes for "createdImages"
             let existingDiv = document.getElementById("createdImages")
             let newDiv = document.createElement('div')
+            newDiv.setAttribute('width', '400')
+            newDiv.setAttribute('height', '400')
             existingDiv.appendChild(newDiv)
             newDiv.setAttribute("class", "createdImages")
             //Create new image with the background of imageurl provided

@@ -43,12 +43,30 @@ input[type = button]{
 }
 .createdImages {
     position: relative;
+    height: 400px;
+    width: 400px;
 }
 .topTextDiv {
     position: absolute;
-    top: 1px
+    top: 1px;
+    left: 0;
+    right:0;
+    font-size: x-large;
+    color: white;
+    text-shadow: 4px 4px black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
 }
 .bottomTextDiv {
     position: absolute;
-    bottom: 1px
+    bottom: 1px;
+    left: 0;
+    right:0;
+    font-size: x-large;
+    color: white;
+    text-shadow: 4px 4px black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
 }
