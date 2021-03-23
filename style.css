@@ -1,0 +1,43 @@
+header {
+    text-align: center;
+    letter-spacing: normal;
+    padding-bottom: 10px;
+    padding-bottom: 15px;
+    color: darkslategrey;
+    background-color: lavenderblush;
+    font-family: 'Chango', cursive;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: lavenderblush;
+}
+
+form {
+    text-align: left;
+    background-color: lavenderblush;
+    color: darkslategrey;
+    line-height: 3;
+    font-family: 'Montserrat', sans-serif;
+}
+input[type = text] {
+    width: 100%;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+}
+input[type = url]{
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    outline: none;
+}
+
+input[type = button]{
+    background-color: greenyellow;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+}
+.submitrestart {
+    width: 100%;
+    background-color: lavenderblush;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
