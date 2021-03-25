@@ -1,3 +1,4 @@
+let memeCount = 0
 const button = document.getElementById("but1")
     button.addEventListener("click", funcSubmit)  
         function funcSubmit(){
@@ -8,7 +9,7 @@ const button = document.getElementById("but1")
             newDiv.setAttribute('width', '400')
             newDiv.setAttribute('height', '400')
             existingDiv.appendChild(newDiv)
-            newDiv.setAttribute("class", "createdImages")
+            newDiv.setAttribute("class", "createdImages")    
             //Create new image with the background of imageurl provided
             //by user
             let imgBackground = document.getElementById('imageurl').value
@@ -16,6 +17,7 @@ const button = document.getElementById("but1")
             newImg.setAttribute("src", imgBackground);
             newImg.setAttribute('width', '400');
             newImg.setAttribute('height', '400');
+            newImg.setAttribute("id", `div${memeCount}`)
             newDiv.appendChild(newImg);
             //create new top and bottom text divs and append to existing
             //NEW DIV
@@ -29,4 +31,21 @@ const button = document.getElementById("but1")
             let bottomText = document.createTextNode(document.getElementById('bottomtext').value)
             bottomDiv.setAttribute("class", "bottomTextDiv")
             bottomDiv.appendChild(bottomText)
+            //reset form to clear values
+            let redXImage = document.createElement('img')
+            redXImage.setAttribute("src", 'redxphoto.png')
+            redXImage.setAttribute("class", "removeImageX")
+            redXImage.setAttribute("id", "redX")
+            newDiv.appendChild(redXImage)
+            redXImage.addEventListener("click", deleteImage)
+            document.getElementById("myForm").reset() 
         }
+function deleteImage(evt){
+    
+    let div = document.getElementById(evt.target.id)
+    div.parentElement.remove()
+    
+}
+
+
+        
